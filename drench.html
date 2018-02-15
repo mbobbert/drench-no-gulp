@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Drench game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Butcherman|Creepster|Open+Sans+Condensed:300" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>Drench</h1>
+
+<p>Drench the board with a single color to win the game!</p>
+
+<p>You've got <span id="trials">30</span> trials left.</p>
+<div id="board"></div>
+<div id="game-over" class="hidden">
+        <p>I'm sorry, you lost :(</p>
+        <p>Press Reset to give it another try.</p>
+
+</div>
+
+
+<div id="congrats" class="hidden">
+    <p>Congrats, you've won!</p>
+    <p>Press Reset to play again.</p>
+
+</div>
+
+
+<section id="buttons">
+
+    <div class="btn" id="btn-1"></div>
+    <div class="btn" id="btn-2"></div>
+    <div class="btn" id="btn-3"></div>
+    <div class="btn" id="btn-4"></div>
+    <div class="btn" id="btn-5"></div>
+    <div class="btn" id="btn-6"></div>
+
+</section>
+
+<button id="reset">Reset</button>
+
+<script src="js/main.js"></script>
+<script>
+randomizeColors();
+drawBoard();
+</script>
+
+</body>
+</html>
